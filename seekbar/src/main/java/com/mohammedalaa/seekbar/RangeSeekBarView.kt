@@ -169,6 +169,11 @@ class RangeSeekBarView : AppCompatSeekBar, SeekBar.OnSeekBarChangeListener {
         requestLayout()
     }
 
+    fun setStep(value: Int) {
+        this.step = value
+        invalidate()
+        requestLayout()
+    }
 
     fun setAnimated(animated: Boolean, animationDuration: Long) {
         this.animated = animated
